@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeria</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Galeria de Fotos</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+  <main class="slideshow-container">
+    <img id="slide" src="foto1.jpg" alt="Foto da mamãe" />
+
+    <div class="botoes">
+      <button onclick="anterior()">⬅️</button>
+      <button onclick="proximo()">➡️</button>
+    </div>
+  </main>
+
+  <script>
+    const fotos = ["foto1.jpg", "foto2.jpg", "foto3.jpg", "foto4.jpg"];
+    let indiceAtual = 0;
+
+    function mostrarFoto() {
+      document.getElementById("slide").src = fotos[indiceAtual];
+    }
+
+    function proximo() {
+      indiceAtual = (indiceAtual + 1) % fotos.length;
+      mostrarFoto();
+    }
+
+    function anterior() {
+      indiceAtual = (indiceAtual - 1 + fotos.length) % fotos.length;
+      mostrarFoto();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para a Mamãe 💖</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Bem-vinda, mamãe!</h1>
+    <p>Esse site foi feito com muito carinho só pra você</p>
+  </header>
+
+  <main>
+    <section class="slideshow-container">
+      <div class="nome-mama">
+        <p>Erlani Araújo</p>
+      </div>
+      
+      <div class="slide-wrapper">
+        <img id="slide" src="foto1.jpg" alt="Foto da mamãe" class="slide-foto">
+        <button class="slide-btn prev" onclick="anterior()">❮</button>
+        <button class="slide-btn next" onclick="proximo()">❯</button>
+      </div>
+      
+      <div class="dots-container">
+        <!-- Pontos serão gerados pelo JavaScript -->
+      </div>
+    </section>
+
+    <section class="sobre">
+      <h2>Para a mulher mais especial desse mundo!</h2>
+      <p>Você é a melhor mãe do mundo!</p>
+      <p>Sempre grato por todo seu amor e cuidado.</p>
+    </section>
+    <section class="memorias-slideshow">
+        <h2>Nossas Memórias</h2>
+        <div class="slide-wrapper-memorias">
+          <img id="slide-memorias" src="memoria1.jpg" alt="Memória especial" class="slide-memoria">
+          <button class="slide-btn prev-memoria" onclick="anteriorMemoria()">❮</button>
+          <button class="slide-btn next-memoria" onclick="proximaMemoria()">❯</button>
+        </div>
+        <div class="dots-container-memorias"></div>
+        <div class="mensagem-final">
+          <p>Obrigado por todos os momentos inesquecíveis que compartilhamos, por mais
+            estajamos bem distantes, eu lhe amo muito, e esse quero que seja um presente como
+            lembrança de tudo que vivemos e que ainda harmos de viver. Estou morrendo de saudades
+            de vc meu grande amor! Eu te amo muito mãe! E porque não escutar o que os seus filinhos
+            falaram: 
+          </p>
+        </div>
+      </section>
+      <section class="audios-familia">
+        <h2>Mensagens em Áudio</h2>
+        <div class="player-container">
+          <!-- Áudio 1 -->
+          <div class="audio-player">
+            <p>Arthur</p>
+            <audio controls>
+              <source src="arthur.mp3" type="audio/mpeg">
+              Seu navegador não suporta áudio.
+            </audio>
+          </div>
+          
+          <!-- Áudio 2 -->
+          <div class="audio-player">
+            <p>Gabriel</p>
+            <audio controls>
+              <source src="gabriel.mp3" type="audio/mpeg">
+              Seu navegador não suporta áudio.
+            </audio>
+          </div>
+          
+          <!-- Áudio 3 -->
+          <div class="audio-player">
+            <p>Daniel</p>
+            <audio controls>
+              <source src="daniel.mp3" type="audio/mpeg">
+              Seu navegador não suporta áudio.
+            </audio>
+          </div>
+          
+          <!-- Áudio 4 -->
+          <div class="audio-player">
+            <p>Bruno</p>
+            <audio controls>
+              <source src="bruno.mp3" type="audio/mpeg">
+              Seu navegador não suporta áudio.
+            </audio>
+          </div>
+        </div>
+      </section>
+  </main>
+  <section class="tempo-de-vida">
+    <h2>Você é mãe e isso já faz: </h2>
+    <div class="contador">
+      <div class="unidade-tempo">
+        <span id="anos">0</span>
+        <p>Anos</p>
+      </div>
+      <div class="unidade-tempo">
+        <span id="meses">0</span>
+        <p>Meses</p>
+      </div>
+      <div class="unidade-tempo">
+        <span id="dias">0</span>
+        <p>Dias</p>
+      </div>
+      <div class="unidade-tempo">
+        <span id="horas">0</span>
+        <p>Horas</p>
+      </div>
+      <div class="unidade-tempo">
+        <span id="minutos">0</span>
+        <p>Minutos</p>
+      </div>
+      <div class="unidade-tempo">
+        <span id="segundos">0</span>
+        <p>Segundos</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Feito com ❤️ por Arthur</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <div id="ceu-estrelado">
+    <!-- Corações serão gerados pelo JavaScript -->
+  </div>
+</body>
+</html>

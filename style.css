@@ -1,0 +1,412 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  header p {
+    font-weight: 300;
+    margin-top: 0.5rem;
+  }
+  
+  /* Slideshow */
+  .slideshow-container {
+    max-width: 370px;
+    margin: 2rem auto;
+    position: relative;
+  }
+  
+  .slide-wrapper {
+    position: relative;
+  }
+  
+  .slide-foto {
+    width: 100%;
+    height: 70vh;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  
+  /* Nome da mamãe */
+  .nome-mama {
+    position: top;
+    top:0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2;
+    padding: 1rem 0;
+  }
+  
+  .nome-mama p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    margin: 0;
+  }
+  
+  /* Botões de navegação */
+  .slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .slide-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev {
+    left: 15px;
+  }
+  
+  .next {
+    right: 15px;
+  }
+  
+  /* Pontos navegadores */
+  .dots-container {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: #333;
+  }
+  
+  /* Seção sobre */
+  .sobre {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .sobre h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #333;
+    margin-top: 0;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.2rem;
+    }
+    
+    .slide-foto {
+      height: 50vh;
+    }
+    
+    .nome-mama p {
+      font-size: 1.5rem;
+    }
+  }
+  /* Nova seção de memórias */
+.memorias {
+    max-width: 800px;
+    margin: 3rem auto;
+    text-align: center;
+  }
+  
+  .galeria-extra {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .imagem-extra {
+    width: 300px;
+    height: 169px; /* Proporção 16:9 */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .imagem-extra:hover {
+    transform: scale(1.03);
+  }
+  
+  .mensagem-final {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .mensagem-final p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    font-style: italic;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .galeria-extra {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .imagem-extra {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      aspect-ratio: 16/9;
+    }
+  }
+  /* Estilos do Contador */
+.tempo-de-vida {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .tempo-de-vida h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contador {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .unidade-tempo {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    min-width: 80px;
+  }
+  
+  .unidade-tempo span {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .unidade-tempo p {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 600px) {
+    .contador {
+      gap: 0.5rem;
+    }
+    .unidade-tempo {
+      min-width: 60px;
+      padding: 0.8rem;
+    }
+    .unidade-tempo span {
+      font-size: 1.5rem;
+    }
+  }
+  /* Estilo do Slideshow de Memórias */
+.memorias-slideshow {
+    max-width: 800px;
+    margin: 3rem auto;
+    text-align: center;
+  }
+  
+  .slide-wrapper-memorias {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    aspect-ratio: 16/9; /* Garante proporção */
+  }
+  
+  .slide-memoria {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .dots-container-memorias {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  /* Reaproveita os estilos dos botões existentes */
+  .prev-memoria {
+    left: 15px;
+  }
+  
+  .next-memoria {
+    right: 15px;
+  }
+  
+  /* Mantenha o resto do CSS da seção .mensagem-final como estava */
+  /* Estilos dos Players de Áudio */
+.audios-familia {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .audios-familia h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .player-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .audio-player {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .audio-player p {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  audio {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  /* Estilização personalizada do player (opcional) */
+  audio::-webkit-media-controls-panel {
+    background-color: #333;
+  }
+  
+  audio::-webkit-media-controls-play-button,
+  audio::-webkit-media-controls-current-time-display,
+  audio::-webkit-media-controls-time-remaining-display {
+    color: white;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    .player-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  #ceu-estrelado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1; /* Fica atrás de todo conteúdo */
+    overflow: hidden;
+  }
+  
+  .coracao {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23ff6b6b" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>') no-repeat center center;
+    background-size: contain;
+    opacity: 0.7;
+    animation: cair linear infinite;
+  }
+  
+  @keyframes cair {
+    0% {
+      transform: translateY(-10vh) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.7;
+    }
+    90% {
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateY(110vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
